@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>UpTask - Administración de Proyectos</title>
+    <link rel="stylesheet" href="css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.0/normalize.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="css/sweetalert2.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script defer src="js/caracteristicas.js"></script>
+</head>
+
+<body class="index">
+    <tag-caracteristicas data-description="Página web dinámica para adaptarse a varios tamaños de pantalla (En línea)." data-features="Conexión a base de datos (MySql). Creación de cuentas e inicio de sesión. Gestión de tareas basadas en AJAX y JSON. 
+    Elegantes cuadros de diálogo.
+    Diseño basado en HTML5, CSS3 y JavaScript."></tag-caracteristicas>
+    <div class="barra">
+        <h1><span>UpTask</span> <span>-</span> <span class="titulo">Administración de Proyectos <a class="ver" href="http://uptaskjg.atwebpages.com/login.php">(Ver en línea)</a> </span> </h1>
+
+        <a href="#">Salir</a>
+    </div>
+    <div class="contenedor">
+        <aside class="contenedor-proyectos">
+            <!-- <h3 class="titulo">Administración de Proyectos</h3> -->
+            <div class="panel crear-proyecto">
+                <a href="#" class="boton" id="7"><span id="btnText">Nuevo Proyecto</span><i class="fas fa-plus"></i> </a>
+            </div>
+
+            <div class="panel lista-proyectos">
+                <h2>Proyectos</h2>
+                <ul id="proyectos">
+                    <!-- <li>
+                <div class="new-proyect">
+                    <input type="text" id="nuevo-proyecto">
+                    <div class="boton">
+                        <i class="far fa-check-square"></i>
+                    </div>
+                </div>
+            </li> -->
+                    <li>
+                        <a href="index.php">Sitio Bienes Raices</a>
+                    </li>
+                    <li>
+                        <a href="index.php">Blog de Viajes</a>
+                    </li>
+                    <li>
+                        <a href="index.php">Tienda de playeras (Expo)</a>
+                    </li>
+                    <li>
+                        <a href="index.php">Tienda en línea de productos</a>
+                    </li>
+                    <li>
+                        <a href="index.php">Blog de Café</a>
+                    </li>
+                    <li>
+                        <a href="index.php">Página de freelancer</a>
+                    </li>
+                    <li>
+                        <a href="index.php">UpTask</a>
+                    </li>
+                </ul>
+            </div>
+        </aside>
+
+        <div class="boton menu">
+            <div class="icono">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-times"></i>
+            </div>
+        </div>
+        <main class="contenido-principal">
+
+            <h1>Proyecto:
+                <span>Sitio Bienes Raices</span>
+            </h1>
+            <div class="avance">
+                <h2>Avance:</h2>
+                <div class="barra-avance">
+                    <div id="fondo" class="fondo"></div>
+                    <div id="porcentaje" class="porcentaje">0%</div>
+                </div>
+            </div>
+
+            <h2>Tareas:</h2>
+            <form action="#" class="agregar-tarea">
+                <div class="campo">
+                    <label for="tarea">Tarea:</label>
+                    <input type="text" placeholder="Nombre Tarea" class="nombre-tarea">
+                    <input type="hidden" id="id_proyecto" value="10">
+                    <input type="submit" class="boton nueva-tarea" value="Agregar">
+                </div>
+            </form>
+            <div class="listado-pendientes">
+                <ul>
+                    <li id="tarea:16" class="tarea">
+                        <p>Diseñar Header</p>
+                        <div class="acciones">
+                            <i class="far fa-check-circle
+                                    completo                                    "></i>
+                            <i class="fas fa-trash"></i>
+                        </div>
+                    </li>
+                    <li id="tarea:17" class="tarea">
+                        <p>Crear Menú adaptable</p>
+                        <div class="acciones">
+                            <i class="far fa-check-circle
+                                    completo                                    "></i>
+                            <i class="fas fa-trash"></i>
+                        </div>
+                    </li>
+                    <li id="tarea:18" class="tarea">
+                        <p>Crear diseño del contenido de la página</p>
+                        <div class="acciones">
+                            <i class="far fa-check-circle
+                                    completo                                    "></i>
+                            <i class="fas fa-trash"></i>
+                        </div>
+                    </li>
+                    <li id="tarea:19" class="tarea">
+                        <p>Agregar Estilos al Footer</p>
+                        <div class="acciones">
+                            <i class="far fa-check-circle
+                                    completo                                    "></i>
+                            <i class="fas fa-trash"></i>
+                        </div>
+                    </li>
+                    <li id="tarea:20" class="tarea">
+                        <p>Basar diseño de las nuevas páginas en index</p>
+                        <div class="acciones">
+                            <i class="far fa-check-circle
+                                    completo                                    "></i>
+                            <i class="fas fa-trash"></i>
+                        </div>
+                    </li>
+                    <li id="tarea:21" class="tarea">
+                        <p>Crear Formulario de contacto</p>
+                        <div class="acciones">
+                            <i class="far fa-check-circle
+                                                                        "></i>
+                            <i class="fas fa-trash"></i>
+                        </div>
+                    </li>
+                    <li id="tarea:22" class="tarea">
+                        <p>Cargar contenido al sitio</p>
+                        <div class="acciones">
+                            <i class="far fa-check-circle
+                                                                        "></i>
+                            <i class="fas fa-trash"></i>
+                        </div>
+                    </li>
+                    <li id="tarea:23" class="tarea">
+                        <p>Convertir sitio en responsivo</p>
+                        <div class="acciones">
+                            <i class="far fa-check-circle
+                                                                        "></i>
+                            <i class="fas fa-trash"></i>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <h2>Acciones:</h2>
+            <div class="listado-pendientes">
+                <ul>
+                    <li>
+                        <form action="#" class="acciones-proyecto">
+                            <div class="campo">
+                                <label>Nombre: </label>
+                                <input type="text" placeholder="Nuevo nombre" value="Sitio Bienes Raices">
+                                <input type="hidden" id="idProyecto" value="10">
+                                <div class="acciones">
+                                    <i class="fas fa-edit"></i>
+                                    <i class="fas fa-trash"></i>
+                                </div>
+                            </div>
+                        </form>
+                    </li>
+                </ul>
+            </div>
+        </main>
+    </div>
+    <!--.contenedor-->
+
+    <script src="js/sweetalert2.all.min.js"></script>
+
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>
